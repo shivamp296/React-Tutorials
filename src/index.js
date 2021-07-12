@@ -12,6 +12,7 @@ const cssstyle={};
 // const cssstyle={
 //   color:"green",
 // };
+//This is what happened next
 
 if(curDate >= 1 && curDate<12){
   greeting="Good Morning";
