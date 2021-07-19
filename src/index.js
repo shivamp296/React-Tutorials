@@ -21,7 +21,7 @@ if(curDate >= 1 && curDate<12){
   greeting="Good Afternoon";
   cssstyle.color = "orange";
 }else{
-  greeting="Good Night";
+  greeting="Good Night !!";
   cssstyle.color = "black";
 }
 
