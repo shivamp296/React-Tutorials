@@ -1,0 +1,10 @@
+<script>
+    const a = ["Shivam","Pooja","Sakshi"];
+
+    const b=a.map((all,i,ar1)=>{
+        console.log(ar1);
+        return all+" Patel";
+    });
+ 
+    console.log(b);
+</script>
