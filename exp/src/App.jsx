@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 
 const App=()=>{
-    const purple = "#8e44ad";
-    const [bg,setbg]=useState(purple);
 
-    const [name,setname]=useState("Shivam 😎");
+    const [name,setname]=useState("");
 
-    const func=()=>{
-        // console.log("Clicked me !"); 
-        let newBg="yellow";
-        setbg(newBg); 
-        setname("Patel 😃");    
-    }
+    const [fullname,setfullname]=useState();
 
-    const func1=()=>{
-        setbg("black");
-        setname("is a smart boy 👦");
+    const anything=(e)=>{
+        console.log(e.target.value);
+        setname(e.target.value);
     };
+
+    const onSubmit=()=>{
+        setfullname(name);
+    }
 
     return (
         <>
-        <div  style={{backgroundColor:bg}}>
-            <button onClick={func} onDoubleClick={func1}>{name}</button>
-        </div>
+            <div>
+                <h1>Hello {fullname}</h1>
+                <input type="text" placeholder="Enter your name" onChange={anything} value={name}/>
+                <button onClick={onSubmit}>Click Me 😃</button>
+            </div>
         </>
     );
 };
