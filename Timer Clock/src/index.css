@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+
+div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  padding: 20px 20px;
+  background-color: rgb(240, 200, 92);
+  color: rgb(240, 84, 66);
+  border-radius: 20px;
+}
+
+span{
+  background-color: rgb(240, 200, 92);
+}
