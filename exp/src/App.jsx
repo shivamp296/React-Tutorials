@@ -23,38 +23,41 @@ const App=()=>{
         console.log(name);
 
         setfullname((preValue)=>{
-            // console.log(preValue);
-            if(name==="fname"){
-                return {
-                    fname : value,
-                    lname : preValue.lname,
-                    email : preValue.email,
-                    phone : preValue.phone
-                } 
-            }else if(name==="lname"){
-                return {
-                    fname: preValue.fname,
-                    lname: value,
-                    email : preValue.email,
-                    phone : preValue.phone
-                }
-            }else if(name==="email"){
-                return {
-                    fname: preValue.fname,
-                    lname: preValue.lname,
-                    email : value,
-                    phone : preValue.phone
-                }
-            }else{
-                return {
-                    fname: preValue.fname,
-                    lname: preValue.lname,
-                    email : preValue.email,
-                    phone : value,
-                }
-            }
+            console.log(preValue);
+            return {
+                ...preValue,
+                [name]:value,       //desctructing [name] : value
+            };
+            // if(name==="fname"){
+            //     return {
+            //         fname : value,
+            //         lname : preValue.lname,
+            //         email : preValue.email,
+            //         phone : preValue.phone
+            //     } 
+            // }else if(name==="lname"){
+            //     return {
+            //         fname: preValue.fname,
+            //         lname: value,
+            //         email : preValue.email,
+            //         phone : preValue.phone
+            //     }
+            // }else if(name==="email"){
+            //     return {
+            //         fname: preValue.fname,
+            //         lname: preValue.lname,
+            //         email : value,
+            //         phone : preValue.phone
+            //     }
+            // }else{
+            //     return {
+            //         fname: preValue.fname,
+            //         lname: preValue.lname,
+            //         email : preValue.email,
+            //         phone : value,
+            //     }
+            // }
         });
-        // setname(e.target.value);
     }
 
     return (
