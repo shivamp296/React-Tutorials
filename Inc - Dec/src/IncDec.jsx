@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const IncDec=()=>{
     const [num,setnum]=useState(0);
@@ -20,8 +24,15 @@ const IncDec=()=>{
                 <div className="centerdiv">
                     <h1> {num} </h1>
                     <div className="buttondiv">
-                        <button onClick={incNum}> Inc </button>
-                        <button onClick={decNum}> Dec </button>
+
+                        <Tooltip title="Add">
+                        <Button onClick={incNum}> <AddIcon/> </Button>
+                        </Tooltip>
+
+                        <Tooltip title="Delete">
+                        <Button onClick={decNum}> <RemoveIcon/> </Button>
+                        </Tooltip>
+                        
                     </div>     
                 </div>
             </div>
