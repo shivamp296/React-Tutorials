@@ -7,6 +7,7 @@ const Navbar=()=>{
         <NavLink exact activeClassName="active_class" to="/"> About us </NavLink>
         <NavLink exact activeClassName="active_class" to="/contact"> Contact us </NavLink>
         <NavLink exact activeClassName="active_class" to="/services"> Services </NavLink>
+        <NavLink exact activeClassName="active_class" to="/search"> Search </NavLink>
         <br/>
             <a href="/">About Us</a>
             <a href="/contact">Contact Us</a>

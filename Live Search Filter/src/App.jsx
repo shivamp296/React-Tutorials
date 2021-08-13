@@ -6,6 +6,7 @@ import Error from "./Error";
 import Navbar from "./Navbar";
 import Services from "./Services";
 import User from "./User";
+import Search from "./Search";
 
 const App=()=>{
     const Name=()=>{
@@ -17,6 +18,7 @@ const App=()=>{
         <Switch>
             <Route exact path="/" component={()=><About name="About using Props"/>} />
             <Route exact path="/services" render={()=><Services name="Services using Props"/>}/>
+            <Route exact path="/search" component={Search}/>
             <Route exact path="/contact" component={()=><Contact name="Contact using Props"/>}/>
             <Route path="/contact/name" component={()=><About name="About using Props"/>}/>
             <Route path="/user/:fname" component={User}/>
